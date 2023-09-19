@@ -1502,18 +1502,18 @@ namespace log4net.Appender
 							var lastDotIndex = baseName.LastIndexOf(".");
 							if (lastDotIndex >= 0)
 							{
-                                string archiveFileBaseDir = Path.GetDirectoryName(archiveFileBaseName);
-                                archiveFileBaseName = Path.Combine(archiveFileBaseDir, baseName.Substring(0, lastDotIndex) + extension);
-                            }
+									string archiveFileBaseDir = Path.GetDirectoryName(archiveFileBaseName);
+									archiveFileBaseName = Path.Combine(archiveFileBaseDir, baseName.Substring(0, lastDotIndex) + extension);
+								}
                                                     }
                                                     else
                                                     {
 							var lastDotIndex = archiveFileBaseName.LastIndexOf(".");
 							if (lastDotIndex >= 0) 
 							{
-                                string archiveFileBaseDir = Path.GetDirectoryName(archiveFileBaseName);
-                                archiveFileBaseName = Path.Combine(archiveFileBaseDir, archiveFileBaseName.Substring(0, lastDotIndex));
-                            }
+									string archiveFileBaseDir = Path.GetDirectoryName(archiveFileBaseName);
+									archiveFileBaseName = Path.Combine(archiveFileBaseDir, archiveFileBaseName.Substring(0, lastDotIndex));
+								}
                                                     }
 						}
 
